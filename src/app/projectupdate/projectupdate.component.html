@@ -1,0 +1,31 @@
+<div class="jumbotron text-center">
+    <h2>Update Project</h2>
+  </div>
+<br>
+<br>
+<div class="update" style="background-color: black; margin-left: 30% ;margin-right: 30%; opacity: 0.7; ">
+    <div class="col-md4" >
+          
+<form  style="max-width:500px;margin:auto;">
+  <div class="form-group">
+      ID
+      <input type="number" name="id" [(ngModel)]="project.id" class="form-control" id="" placeholder="id" readonly>
+    </div>
+<div class="form-group">
+  Project Name
+  <input type="text" name="project_name" [(ngModel)]="project.project_name" class="form-control" id="" placeholder="project name">
+</div>
+
+<div class="form-group">
+  Project Status
+  <input type="text" name="status" [(ngModel)]="project.status" class="form-control" id="" placeholder="project status">
+</div>
+        
+<button type="button" (click)="Update()"  class="btn btn-primary">UPDATE</button>&nbsp;&nbsp;&nbsp;
+<button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+</form>
+</div>
+</div>
+<br>
+<br>
+<br>

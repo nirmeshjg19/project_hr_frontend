@@ -1,0 +1,33 @@
+<br>
+<br>
+<br>
+<br>
+<div class="jumbotron text-center">
+    <h1>List Of Departments</h1> 
+  </div>
+<br>
+<div class="container" id="login"style="background-color: black;  opacity: 0.7;max-width:500px;margin:auto;">
+          <legend style="color: azure;">Select Department</legend>
+          <button type="button" class="button" routerLink="/departmentregister" class="btn btn-primary">Add new Department</button>&nbsp;&nbsp;&nbsp;
+          <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+<table class="table table-hover table-condensed" style="border: darkturquoise;max-width:500px;margin:auto;">
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>Department Name</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let department of departments">
+          <td>{{department.id}}</td>
+        <td>{{department.department_name}}</td>
+        <td>
+            <button type="button" routerLink="/departmentupdate/{{department.id}}" class="btn btn-warning">Update</button>
+        </td>
+    </tr>  
+  </tbody>
+</table>
+    </div>
+    <br>
+    <br>

@@ -1,0 +1,29 @@
+
+    <div class="jumbotron text-center">
+      <h1>Register Department</h1> 
+    </div>
+  <br>
+  <div class="register" style="background-color: black; margin-left: 34% ;margin-right: 34%; opacity: 0.7; ">
+      <div class="col-md4" >
+          <form #myForm="ngForm" (ngSubmit)="register(myForm)" role="form" style="width: 50%; align-self: center;margin-left:25%;">
+            <legend style="color: azure;">Department Registration Form</legend>
+      <div class="form-group">
+          DEPARTMENT NAME
+          <input type="text" name="department_name" ngModel class="form-control" id="" placeholder="department name">
+        </div>
+       
+         
+      
+  
+          <div class="input-group-btn">
+            <button type="submit" class="btn btn-primary">Submit</button>&nbsp;&nbsp;&nbsp;
+            <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+          </div>
+        </form>
+      </div>
+  
+  </div>
+  <br>
+  <br>
+  <br>
+  

@@ -1,0 +1,18 @@
+.jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 80px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+
+.register
+{
+  background-size: cover;
+  background-image: url(src/assets/img/register1.jpeg);
+}
+  .input-group-btn {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 20px 25px;
+    font-family: Montserrat, sans-serif;
+  }

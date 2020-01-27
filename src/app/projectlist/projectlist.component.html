@@ -1,0 +1,36 @@
+
+<br>
+<br>
+<br>
+<div class="jumbotron text-center">
+    <h1>List Of Projects</h1> 
+  </div>
+<br>
+<div class="listofemp" style="background-color: black;  opacity: 0.7;max-width:500px;margin:auto;">
+    <div class="col-md4" >
+          <legend style="color: azure;">Select Project</legend>
+          <button type="button" class="button" routerLink="/projectregister" class="btn btn-primary">Add new Project</button>&nbsp;&nbsp;&nbsp;
+          <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+          <table class="table table-hover table-condensed" style="border: darkturquoise;max-width:500px;margin:auto;">
+  <thead>
+    <tr>
+        <th>Id</th>
+        <th>Project Name</th>
+        <th>Project Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let project of projects">
+        <td>{{project.id}}</td>
+      <td>{{project.project_name}}</td>
+      <td>{{project.status}}</td>
+      <td>
+        <button type="button" routerLink="/projectupdate/{{project.id}}" class="btn btn-warning">Update</button>
+    </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<br>
+<br>

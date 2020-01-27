@@ -1,0 +1,48 @@
+
+<div class="jumbotron text-center">
+   
+    <h1>Login</h1>
+
+  </div>
+  <button (click)="switchLanguage('en')">English</button>
+
+<button (click)="switchLanguage('ge')">Japense</button>
+<button (click)="switchLanguage('hi')">Hindi</button>
+  
+<br>
+<br>
+
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)" role="form" style="max-width:500px;margin:auto;">
+<div >
+   <div class="col-md-12" >
+      <div class="form-group">
+          <label for="email_id"><h1>{{ "email_id" | translate }}</h1></label>
+          <input ngModel type="email" class="form-control" id="email_id" required email name="email_id" #email_id="ngModel" #spy>
+          <div *ngIf="email_id.invalid && (email_id.dirty || email_id.touched || email_id.pristine)" class="alert alert-danger">
+            <div *ngIf="email_id.errors.required">
+                Email id is required.
+            </div>
+            <div *ngIf="email_id.errors.email">
+                Email Id must be valid.
+            </div>
+        </div>   
+        </div>
+  <!-- <div class="form-group" >
+      Email
+      <input type="email" ngModel name="email_id" class="form-control" id="" placeholder="Input email" >
+    </div> -->
+  
+    <div class="form-group" >
+        {{ "password" | translate }}
+        <input type="password"  ngModel name="password" class="form-control" id="" placeholder="Input password" required minlength="5" maxlength="10">
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <h5><a routerLink="/forgot" style="text-underline-position: below;">Forgot Password</a></h5>
+    
+    <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+    </div>
+  </div> 
+</form>
+
+
+

@@ -1,0 +1,49 @@
+<div class="jumbotron text-center">
+    <h1>Apply Leave</h1>
+  </div>
+<br>
+<div class="update" style="background-color: black; margin-left: 30% ;margin-right: 30%; opacity: 0.7; ">
+<form #myForm="ngForm" (ngSubmit)="applyleave(myForm)" role="form" style="max-width:500px;margin:auto;">
+    <legend>Apply Leave</legend>
+    
+    <div class="form-group">
+        Employee Id
+        <input type="number" name="u_id" ngModel class="form-control" >
+      </div>
+
+  <br>
+    <div>
+    Leave Type
+    <select ngModel name="leaveType" required>
+      <option value="MEDICAL">MEDICAL</option>
+      <option value="PL">PL</option>
+      <option value="CASUAL">CASUAL</option>
+      <option value="HALFDAY">HALFDAY</option>
+      </select>
+  </div>
+<br>
+    <div class="form-group">
+      From Date
+      <input type="date" ngModel name="fromDate" class="form-control" >
+    </div>
+  
+    <div class="form-group">
+      To Date
+      <input type="date" ngModel name="toDate" class="form-control" >
+    </div>
+  
+    <div class="form-group">
+     Remarks
+    <textarea name="reason" ngModel id="reason" class="form-control" rows="3" required="required"></textarea>812.
+    </div>
+
+    <div class="input-group-btn">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br>
+        
+      </div>
+      <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+  </form>
+</div>
+<br>
+<br>

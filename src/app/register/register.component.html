@@ -1,0 +1,93 @@
+<div class="jumbotron text-center">
+    <h1>Register</h1> 
+  </div>
+<br>
+<div class="register" style="background-color: black; margin-left: 20% ;margin-right: 20%; opacity: 0.7; ">
+    <div class="col-md4" >
+        <form  #myForm="ngForm" (ngSubmit)="register(myForm)" role="form" style="max-width:500px;margin:auto;color: floralwhite;">
+            <div class="bc">
+                <div class="form-group">
+                  ROLE
+                  <input type="text" name="role" ngModel class="form-control" id="" placeholder="role">
+                </div>
+                <div class="form-group">
+                    FIRST NAME
+                    <input type="text" name="first_name" ngModel class="form-control" id="" placeholder="first_name">
+                  </div>
+                  <div class="form-group">
+                      LAST NAME
+                      <input type="text" name="last_name" ngModel class="form-control" id="" placeholder="last_name">
+                    </div>
+                    <div class="form-group">
+                        EMAIL
+                        <input type="text" name="email_id" ngModel class="form-control" id="" placeholder="email_id">
+                      </div>
+                      <div class="form-group">
+                          PASSWORD
+                          <input type="password" name="password" ngModel class="form-control" id="" placeholder="password">
+                        </div>
+                        <div class="form-group">
+                            ADDRESS
+                            <input type="text" name="permanant_address" ngModel class="form-control" id="" placeholder="permanant_address">
+                          </div>
+                          <div class="form-group">
+                              CITY
+                              <input type="text" name="city" ngModel class="form-control" id="" placeholder="city">
+                            </div>
+                            <div class="form-group">
+                                SALARY
+                                <input type="number" name="salary" ngModel class="form-control" id="" placeholder="salary">
+                              </div>
+                              <div class="form-group">
+                                  CONTACT
+                                  <input type="text" name="contact" ngModel class="form-control" id="" placeholder="contact">
+                                </div>
+                                <div class="form-group">
+                                    GENDER
+                                        <input type="radio" ngModel  name="gender" value="MALE" checked>MALE<br>
+                                        <input type="radio" ngModel  name="gender" value="FEMALE">FEMALE<br>
+                                        <input type="radio" ngModel  name="gender" value="OTHER">OTHER  
+                                  </div>
+                                  <div class="form-group">
+                                      DATE OF BIRTH
+                                      <input type="date" name="date_of_birth" ngModel class="form-control" >
+                                    </div>
+                                    <div class="form-group">
+                                        DATE OF JOINING
+                                        <input type="date" name="date_of_joining" ngModel class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          EXPERIENCE
+                                          <input type="number" name="experience" ngModel class="form-control" id="" placeholder="experience">
+                                        </div>
+                                        <div class="form-group">
+                                            MARITIAL STATUS
+                                            <input type="text" name="maritial_status" ngModel class="form-control" id="" placeholder="maritial_status">
+                                          </div>
+                                          <div class="form-group">
+                                              DEPARTMENT ID
+                                              <input type="number" name="department_id" ngModel class="form-control" id="" placeholder="department id">
+                                            </div>
+                                            <div class="form-group">
+                                            PROJECT ID
+                                                <input type="number" name="project_id" ngModel class="form-control" id="" placeholder="project id">
+                                              </div>
+                                          <div class="form-group">
+                                              HR
+                                              <input type="number" name="hr_id" ngModel class="form-control" id="" placeholder="hr id">
+                                            </div>
+
+                                            <div class="form-group">
+                                                Employee image
+                                                <input (change)="onSelect($event)" accept="image/*" class="form-control" style="padding-left: 20px;padding-top: 8px;" type="file" id="restimg" name=empimage >
+                                              </div>
+                            
+                <button type="submit" class="btn btn-primary">Submit</button>&nbsp;&nbsp;&nbsp;
+                <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+              </div>
+              </form>
+    </div>
+</div>
+<br>
+<br>
+

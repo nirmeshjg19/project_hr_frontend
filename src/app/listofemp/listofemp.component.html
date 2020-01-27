@@ -1,0 +1,63 @@
+<br>
+<br>
+<br>
+<br>
+<div class="jumbotron text-center">
+    <h1>List Of Employees</h1> 
+  </div>
+<br>
+<div class="listofemp" style="background-color: black; margin: auto; opacity: 0.7; ">
+    <div class="col-md4" >
+          <legend style="color: azure;">Select Employee</legend>
+          <button type="button" class="button" routerLink="/register" class="btn btn-warning">Add new Employee</button>&nbsp;&nbsp;&nbsp;
+          <button type="button" class="button" routerLink="/manageleave" class="btn btn-warning">Show leaves of Employees</button>&nbsp;&nbsp;&nbsp;
+          <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+<table class="table  table-hover table-condensed" style="border: darkturquoise;width: 80%">
+  <thead>
+    <tr>
+          <th>Id</th>
+          <th>Role</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Address</th>
+      <th>Salary</th>
+      <th>Contact</th>
+      <th>Gender</th>
+      <th>DOB</th>
+      <th>DateOfJoining</th>
+      <th>Experience</th>
+      <th>Maritial status</th>
+      <th>Project Name</th>
+      <th>Department Name</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.role}}</td>
+      <td>{{user.first_name}} {{user.last_name}}</td>
+      <td>{{user.email_id}}</td>
+      <td>{{user.password}}</td>
+      <td>{{user.permanant_address}}</td>
+      <td>{{user.salary}}</td>
+      <td>{{user.contact}}</td>
+      <td>{{user.gender}}</td>
+      <td>{{user.date_of_birth}}</td>
+      <td>{{user.date_of_joining}}</td>
+      <td>{{user.experience}}</td>
+      <td>{{user.maritial_status}}</td>
+      <td>{{user.project.project_name}}</td>
+      <td>{{user.department.department_name}}</td>
+      <td>
+          <button type="button" routerLink="/empupdate/{{user.id}}" class="btn btn-warning">Update</button>
+      </td>
+    </tr>  
+  </tbody>
+</table>
+
+    </div>
+    </div>
+    <br>
+    <br>

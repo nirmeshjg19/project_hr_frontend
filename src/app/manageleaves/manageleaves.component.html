@@ -1,0 +1,56 @@
+<br>
+<br>
+<br>
+<br>
+<div class="jumbotron text-center">
+    <h1>Manage Leaves</h1> 
+  </div>
+<br>
+<div class="listofemp" style="background-color: black;  opacity: 0.7;max-width:900px;margin:auto;">
+    <div class="col-md4" >
+          <legend style="color: azure;">Active Leaves</legend>
+          <button type="button" class="button" routerLink="/leavehistory" class="btn btn-warning">Show leaves history of Employees</button>&nbsp;&nbsp;&nbsp;
+          <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+          <br>
+          <br>
+<table class="table  table-hover table-condensed" style="border: darkturquoise; width: 400px;">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>From Date</th>
+      <th>To Date</th>
+      <th>LeaveType</th>
+      <th>Reason</th>
+      <th>No Of Days</th>
+      <th>User id</th>
+      <th>ACTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let aleave of aleave">
+      <td>{{aleave.id}}</td>
+      <td>{{aleave.user.first_name}}</td>
+      <td>{{aleave.user.last_name}}</td>
+      <td>{{aleave.fromDate}}</td>
+      <td>{{aleave.toDate}}</td>
+      <td>{{aleave.leaveType}}</td>
+      <td>{{aleave.reason}}</td>
+      <td>{{aleave.duration}}</td>
+      <td>{{aleave.user.id}}</td>
+      <td> 
+          <button type="button" (click)="acceptLeave(aleave)" class="btn btn-warning">Accept</button>
+        </td>
+      <td>
+          <button type="button" (click)="disapproveLeave(aleave)" class="btn btn-warning">Reject</button>
+      </td>
+    </tr>  
+  </tbody>
+</table>
+
+    </div>
+    </div>
+    <br>
+    <br>
+    

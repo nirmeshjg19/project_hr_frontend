@@ -1,0 +1,49 @@
+
+<br>
+<br>
+<br>
+<div class="jumbotron text-center">
+    <h1>Leave History</h1> 
+  </div>
+<br>
+<div class="listofemp" style="background-color: black; margin: auto; opacity: 0.7; ">
+    <div class="col-md4" >
+          <legend style="color: azure;">Employee Leave History</legend>
+          <button type="button" class="button" routerLink="/manageleave" class="btn btn-warning">Manage Leaves</button>
+<table class="table  table-hover table-condensed" style="border: darkturquoise;">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>From Date</th>
+      <th>To Date</th>
+      <th>LeaveType</th>
+      <th>Reason</th>
+      <th>No Of Days</th>
+      <th>Active/Deactive</th>
+      <th>Status</th>
+      <th>User id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let leave of leaves">
+      <td>{{leave.id}}</td>
+      <td>{{leave.user.first_name}}</td>
+      <td>{{leave.user.last_name}}</td>
+      <td>{{leave.fromDate}}</td>
+      <td>{{leave.toDate}}</td>
+      <td>{{leave.leaveType}}</td>
+      <td>{{leave.reason}}</td>
+      <td>{{leave.duration}}</td>
+      <td>{{leave.active}}</td>
+      <td>{{leave.status}}</td>
+      <td>{{leave.user.id}}</td>
+    </tr>  
+  </tbody>
+</table>
+
+    </div>
+    </div>
+    <br>
+    <br>

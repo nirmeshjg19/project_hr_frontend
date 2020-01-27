@@ -1,0 +1,11 @@
+.jumbotron {
+  background-color: #f4511e;
+  color: #fff;
+  padding: 80px 25px;
+  font-family: Montserrat, sans-serif;
+}
+
+#apply leave{
+  width: 70%;
+  border: 1px;
+}

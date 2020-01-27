@@ -1,0 +1,86 @@
+<div class="jumbotron text-center">
+    <h2>Update</h2>
+  </div>
+<br>
+<br>
+<div class="update" style="background-color: black; margin-left: 30% ;margin-right: 30%; opacity: 0.7; ">
+    <div class="col-md4" >
+          
+<form  style="max-width:500px;margin:auto;">
+    <legend style="color: azure;">Update Form</legend>
+    <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+    <div class="form-group">
+        ID
+        <input type="number" name="id" [(ngModel)]="user.id" class="form-control" id="" placeholder="id" readonly>
+      </div>
+  <div class="form-group">
+    ROLE
+    <input type="text" name="role" [(ngModel)]="user.role" class="form-control" id="" placeholder="role">
+  </div>
+  <div class="form-group">
+      FIRST NAME
+      <input type="text" name="first_name" [(ngModel)]="user.first_name" class="form-control" id="" placeholder="first_name">
+    </div>
+    <div class="form-group">
+        LAST NAME
+        <input type="text" name="last_name"  [(ngModel)]="user.last_name" class="form-control" id="" placeholder="last_name">
+      </div>
+      <div class="form-group">
+          EMAIL
+          <input type="text" name="email_id" [(ngModel)]="user.email_id" class="form-control" id="" placeholder="email_id">
+        </div>
+        <div class="form-group">
+            PASSWORD
+            <input type="text" name="password" [(ngModel)]="user.password" class="form-control" id="" placeholder="password">
+          </div>
+          <div class="form-group">
+              ADDRESS
+              <input type="text" name="permanant_address" [(ngModel)]="user.permanant_address" class="form-control" id="" placeholder="permanant_address">
+            </div>
+            <div class="form-group">
+                CITY
+                <input type="text" name="city" [(ngModel)]="user.city" class="form-control" id="" placeholder="city">
+              </div>
+              <div class="form-group">
+                  SALARY
+                  <input type="number" name="salary" [(ngModel)]="user.salary" class="form-control" id="" placeholder="salary">
+                </div>
+                <div class="form-group">
+                    CONTACT
+                    <input type="text" name="contact" [(ngModel)]="user.contact" class="form-control" id="" placeholder="contact">
+                  </div>
+                  <div class="form-group">
+                      GENDER
+                          <input type="radio" ngModel  name="gender" value="MALE" checked>MALE<br>
+                          <input type="radio" ngModel  name="gender" value="FEMALE">FEMALE<br>
+                          <input type="radio" ngModel  name="gender" value="OTHER">OTHER  
+                    </div>
+                    <div class="form-group">
+                        DATE OF BIRTH
+                        <input type="date" name="date_of_birth" [(ngModel)]="user.date_of_birth" class="form-control" >
+                      </div>
+                      <div class="form-group">
+                          DATE OF JOINING
+                          <input type="date" name="date_of_joining" [(ngModel)]="user.date_of_joining" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            EXPERIENCE
+                            <input type="number" name="experience" [(ngModel)]="user.experience" class="form-control" id="" placeholder="experience">
+                          </div>
+                          <div class="form-group">
+                              MARITIAL STATUS
+                              <input type="text" name="maritial_status" [(ngModel)]="user.maritial_status" class="form-control" id="" placeholder="maritial_status">
+                            </div>
+                            <div class="form-group">
+                                HR
+                                <input type="number" name="hr_id" [(ngModel)]="user.hr_id" class="form-control" id="" placeholder="hr id">
+                              </div>
+              
+  <button type="button" (click)="Update()" class="btn btn-primary">UPDATE</button>&nbsp;&nbsp;&nbsp;&nbsp;
+</form>
+    </div>
+</div>
+<br>
+<br>
+<br>
+

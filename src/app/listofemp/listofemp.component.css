@@ -1,0 +1,16 @@
+td{
+    max-width: 30%;
+    white-space: nowrap;
+}
+.jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 80px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+.button
+{
+    width: 150px;
+    text-align: center;
+    margin-left: 45%;
+}

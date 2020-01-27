@@ -1,0 +1,65 @@
+<br>
+<br>
+<div class="jumbotron text-center">
+    <h1>Profile</h1> 
+  </div>
+<br>
+<div class="listofemp" style="background-color: black; margin-left: 5% ;margin-right: 5%; opacity: 0.7; ">
+    <div class="col-md4" >
+          <legend style="color: azure;">Personal And Professional Details</legend>
+          
+          
+          <table class="table  table-hover table-condensed" style="border: darkturquoise; text-align: center; width:100%">
+           
+
+            <div class="card">
+             <tr>
+                <button type="button" class="button"  routerLink="/applyleave" class="btn btn-warning">Apply Leave</button>
+                <br>
+                <br>
+                <button type="button" class="button" style="width: fit-content; text-align: center; margin-left:auto;margin-right:auto;" routerLink="/myleave" >Show My Leave</button>
+                <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+                <h2 style="text-align:center; color: khaki;">MY PROFILE</h2>
+                
+
+                <h1><p style="color: khaki;">{{singleuser.first_name}} {{singleuser.last_name}}</p></h1>
+                <p><img class="restaurants" style="width:150px;height:150px;" src="data:image/gif;base64,{{singleuser.empimage}}" routerLink="/fooditems"></p>
+                <p class="title" style="color: khaki;">ROLE : {{singleuser.role}}</p>
+              
+                              <p style="color: khaki;">Id              :  {{singleuser.id}}</p>
+                          
+                              <p style="color: khaki;">Email           :  {{singleuser.email_id}}</p>
+                            
+                              <p style="color: khaki;">Password        :  {{singleuser.password}}</p>
+                          
+                              <p style="color: khaki;">Address         :  {{singleuser.permanant_address}}</p>
+                           
+                              <p style="color: khaki;">City            :  {{singleuser.city}}</p>
+                          
+                              <p style="color: khaki;">Salary          :  {{singleuser.salary}}</p>
+                            
+                              <p style="color: khaki;">Contact         :  {{singleuser.contact}}</p>
+                           
+                              <p style="color: khaki;">Gender          :  {{singleuser.gender}}</p>
+                           
+                              <p style="color: khaki;">DOB             :  {{singleuser.date_of_birth}}</p>
+                           
+                              <p style="color: khaki;">DateOfJoining   :  {{singleuser.date_of_joining}}</p>
+                            
+                              <p style="color: khaki;">Experience      :  {{singleuser.experience}}</p>
+                            
+                              <p style="color: khaki;">Maritial status :  {{singleuser.maritial_status}}</p>
+                           
+                              <p style="color: khaki;">Project Name    :  {{singleuser.project.project_name}}</p>
+                              
+                              <p style="color: khaki;">Department Name :  {{singleuser.department.department_name}}</p>
+                              
+            </tr>
+            <h1><p><button>THANK YOU</button></p></h1>
+            </div>
+            
+            </table>
+                </div>
+                </div>
+                <br>
+                <br>

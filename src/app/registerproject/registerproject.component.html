@@ -1,0 +1,33 @@
+
+    <div class="jumbotron text-center">
+        <h1>Register Project</h1> 
+      </div>
+    <br>
+    <div class="register" style="background-color: black; margin-left: 34% ;margin-right: 34%; opacity: 0.7; ">
+        <div class="col-md4" >
+            <form #myForm="ngForm" (ngSubmit)="register(myForm)" role="form" style="width: 50%; align-self: center;margin-left:25%;">
+              <legend style="color: azure;">Project Registration Form</legend>
+          
+       
+        <div class="form-group">
+            PROJECT NAME
+            <input type="text" name="project_name" ngModel class="form-control" id="" placeholder="project name">
+          </div>
+          <div class="form-group">
+              STATUS
+              <input type="text" name="status" ngModel class="form-control" id="" placeholder="status">
+            </div>
+           
+        
+    
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+    
+    </div>
+    <br>
+    <br>
+    <br>
+    
